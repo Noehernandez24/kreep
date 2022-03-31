@@ -1,4 +1,4 @@
-console.log('Iniciando...')
+console.log('Please Wait...!\nStarting Valor Bot...')
 
 import { join, dirname } from 'path'
 import { createRequire } from "module";
@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('TheMystic-Bot\nWhatsApp Bot', {
+say('Valor Bot\nMulti-device beta', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`Bot creado por Bruno Sobrino`, {
+say(`by ${author.name}`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -61,7 +61,7 @@ function start(file) {
   })
   p.on('exit', (_, code) => {
     isRunning = false
-    console.error('Ocurrio un error inesperado:', code)
+    console.error('Exited with code:', code)
     if (code === 0) return
     watchFile(args[0], () => {
       unwatchFile(args[0])
