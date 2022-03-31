@@ -135,7 +135,7 @@ ${usedPrefix}disable welcome
       throw false
   }
   m.reply(`
-*${type}* berhasil di *${isEnable ? 'nyala' : 'mati'}kan* ${isAll ? 'untuk bot ini' : isUser ? '' : 'untuk chat ini'}
+*El comando Antidelete* ah sido *${isEnable ? 'nyala' : 'mati'}kan* ${isAll ? 'eliminado correctamente' : isUser ? '' : 'eliminado correctamente'}
 `.trim())
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
