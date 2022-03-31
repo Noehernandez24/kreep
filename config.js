@@ -3,45 +3,72 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['50360474702', 'Dinesh_Valor🇮🇳', true]
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-global.mods = ['50360474702'] // Want some help?
-global.prems = ['50360474702'] // Premium user has unlimited limit
+  ['50360474702', 'ChachiDev 👾', true],
+  ['50360474702'],
+] // Cambia los numero que quieras
+global.mods = [] 
+global.prems = [] 
 global.APIs = { // API Prefix
   // name: 'https://website'
+  amel: 'https://melcanz.com',
+  bx: 'https://bx-hunter.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
-  bg: 'http://bochil.ddns.net',
   xteam: 'https://api.xteam.xyz',
+  nzcha: 'http://nzcha-apii.herokuapp.com',
+  bg: 'http://bochil.ddns.net',
+  fdci: 'https://api.fdci.se',
+  dzx: 'https://api.dhamzxploit.my.id',
+  bsbt: 'https://bsbt-api-rest.herokuapp.com',
   zahir: 'https://zahirr-web.herokuapp.com',
-  zeks: 'https://api.zeks.xyz',
+  zeks: 'https://api.zeks.me',
+  hardianto: 'https://hardianto-chan.herokuapp.com',
+  pencarikode: 'https://pencarikode.xyz', 
+  LeysCoder: 'https://leyscoders-api.herokuapp.com',
+  adiisus: 'https://adiixyzapi.herokuapp.com',
+  lol: 'https://api.lolhuman.xyz',
   pencarikode: 'https://pencarikode.xyz',
-  LeysCoder: 'https://leyscoders-api.herokuapp.com'
+  Velgrynd: 'https://velgrynd.herokuapp.com',
+  rey: 'https://server-api-rey.herokuapp.com',
+  hardianto: 'http://hardianto-chan.herokuapp.com',
+  shadow: 'https://api.reysekha.xyz',
+  apialc: 'https://api-alc.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': '493053acc612476f',
+  'https://api-alc.herokuapp.com': 'ConfuMods',
+  'https://api.reysekha.xyz': 'apirey',
+  'https://melcanz.com': 'F3bOrWzY',
+  'https://bx-hunter.herokuapp.com': 'Ikyy69',
+  'https://api.xteam.xyz': '5bd33b276d41d6b4',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
-  'https://pencarikode.xyz': 'pais',
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll'
+  'https://bsbt-api-rest.herokuapp.com': 'benniismael',
+  'https://api.zeks.me': 'apivinz',
+  'https://hardianto-chan.herokuapp.com': 'hardianto',
+  'https://pencarikode.xyz': 'pais', 
+  'https://leyscoders-api.herokuapp.com': 'MIMINGANZ', 
+  'https://server-api-rey.herokuapp.com': 'apirey',
+  'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862'
 }
 
 // Sticker WM
-global.packname = 'Valor Bot'
-global.author = 'Dinesh_Valor🇮🇳'
+global.packname = ''
+global.author = '~KreepBOT'
 
-global.multiplier = 69 // The higher, The harder levelup
+global.wm = '~KreepBOT'
+
+global.multiplier = 9999 // The higher, The harder levelup
+
+global.media = 'https://i.imgur.com/PWM1lo5.jpg'
 
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
-      level: '🎖️',
-      limit: '🎳',
+      level: '🧬',
+      limit: '🌌',
       health: '❤️',
       exp: '✉️',
-      money: '💰',
+      money: '💵',
       potion: '🥤',
       diamond: '💎',
       common: '📦',
@@ -74,6 +101,6 @@ global.rpg = {
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Updated - config.js"))
+  console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
