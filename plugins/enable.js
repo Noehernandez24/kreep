@@ -135,7 +135,7 @@ ${usedPrefix}disable welcome
       throw false
   }
   m.reply(`
-*El comando Antidelete* ah sido *${isEnable ? 'nyala' : 'Desac'}tivado* ${isAll ? 'correctamente' : isUser ? '' : 'eliminado correctamente'}
+*El comando Antidelete* a sido *${isEnable ? 'nyala' : 'desac'}tivado* ${isAll ? 'correctamente' : isUser ? '' : 'correctamente'}
 `.trim())
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
