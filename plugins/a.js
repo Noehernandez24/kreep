@@ -1,15 +1,19 @@
+import fs from "fs"
+let handler = m => m
 
-let util = require('util')
-let path = require('path')
-
-let handler = async (m, { conn }) => {
+handler.all = async function (m) {
 let vn = './media/a.mp3'
-conn.sendFile(m.chat, vn, 'a.mp3', null, m, true, {
-type: 'audioMessage', // paksa tanpa convert di ffmpeg
-ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
-})
-}
-handler.customPrefix = /ª|a|A/
-handler.command = /^(a|ª|A?$)/
 
-module.exports = handler
+const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
+message: { 
+"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
+}}}  
+
+if (/^a$/i.test(m.text)) {
+    
+conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
+}
+return !0
+}
+export default handler
+
