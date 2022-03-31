@@ -23,6 +23,7 @@ Elimina el mensaje del bot al que respondas
 Envia información y vista previa
 de la canción en spotify.
 ➥ /tomp3 - Convierte mp4 a mp3
+➥ /google - Busca algo en Google
 ➥ /donate - Dona para que el bot funcione las 24 horas del día.
 \n
 Por favor, ten en cuenta que es un proyecto que
