@@ -3,12 +3,12 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 let media = './Menu2.jpg'
 let runnya = `
-*───「 RUNTIME BOT 」───*
+*「 TIEMPO DE EJECUCIÓN 」*
 
 Runtime : ${uptime}
 `
 //conn.sendButton(m.chat, runnya, wm, null, [['Menu', '.menu']], m) 
-conn.sendButton(m.chat, runnya.trim(), wm, media, [`Back To Menu`, `${usedPrefix}menu`], m, {asLocation: true})
+conn.sendButton(m.chat, runnya.trim(), wm, media, [`Back To Menu`, `${usedPrefix}comandos`], m, {asLocation: false})
 }
 handler.help = ['runtime']
 handler.tags = ['info']

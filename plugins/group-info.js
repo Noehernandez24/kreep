@@ -7,15 +7,15 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
     let text = `*「 Group Information 」*\n
 *ID:* 
 ${groupMetadata.id}
-*Name:* 
+*Nombre:* 
 ${groupMetadata.subject}
-*Description:* 
+*Descripción:* 
 ${groupMetadata.desc?.toString() || 'unknown'}
-*Total Members:*
+*Total de miembros:*
 ${participants.length} Members
-*Group Owner:* 
+*Creador del grupo:* 
 @${owner.split('@')[0]}
-*Group Admins:*
+*Admins:*
 ${listAdmin}
 *Group Settings:*
 ${isBanned ? '✅' : '❌'} Banned
