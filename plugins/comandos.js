@@ -3,6 +3,8 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     let comandos =`
 *👾Comandos del bot👾*
 \n
+〘 HERAMIENTAS PRINCIPALES 〙
+
 ➥ /alive - Verifica si el bot
 funciona correctamente.
 ➥ /comandos - Muestra la lista de comandos.
@@ -25,6 +27,20 @@ de la canción en spotify.
 ➥ /tomp3 - Convierte mp4 a mp3
 ➥ /google - Busca algo en Google
 ➥ /donate - Dona para que el bot funcione las 24 horas del día.
+➥ /gitclone (url) - Clona el repositorio y lo envia en formato .zip
+➥ /ig (url) - Descarga cualquier video de Instagram.
+➥ /pinterest (texto) - Descarga cualquier imagen de pinterest
+➥ /uptime - Muestra el tiempo activo del bot.
+➥ /lyrics (nombre de la canción) - Envia la letra de una canción.
+➥ /toimg2 - Convierte un sticker a imagen.
+➥ /ttp (texto) - Crea un sticker con el texto que quieras.
+➥ /qrcode (texto) - Crea un codigo qr del texto.
+➥ /spoiler - Comando para ocultar un spoiler
+➥ /tts (texto) - Convierte texto a voz.
+➥ /tourl - Sube tu imagen a telegraph.
+➥ /afk - Luego de ejecutar el comando, contara el tiempo que este afk (sin enviar mensajes)
+
+Haz click en el boton "FOR FUN" para ver comandos divertidos, o haz click en el boton "GROUP COMMANDS" para ver los comandos utilizables en grupos.
 \n
 Por favor, ten en cuenta que es un proyecto que
  aún está en desarrollo y puede contener fallas 🚧
@@ -33,7 +49,9 @@ Por favor, ten en cuenta que es un proyecto que
  https://chat.whatsapp.com/I2Ykt6TerwD4yfarO2joOG
  `.trim()
 
- conn.sendHydrated(m.chat, comandos, wm, picture, 'https://wa.me/+50360474702?text=Hola', 'REPORTAR BUGS', null, null,[
+ conn.sendHydrated(m.chat, comandos, wm, picture, '', '', null, null,[
+    ['FOR FUN', '/forfun'],
+    ['GROUP COMMANDS', '/cg']
 
  ], m)}
 

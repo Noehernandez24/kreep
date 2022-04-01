@@ -147,7 +147,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|m|hilp|\?)$/i
+handler.command = /^(menp|m|hilp|\?)$/i
 
 handler.exp = 3
 
