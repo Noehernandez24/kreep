@@ -3,19 +3,14 @@ let handler = m => m
 
 handler.all = async function (m) {
 let vn = './media/bot.mp3'
-const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
-message: { 
-orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'WhatsApp Bot Oficial', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'    
-}}}
-const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
-message: { 
-"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
-}}}  
 
 if (/^bot$/i.test(m.text)) {
     
-conn.sendButton(m.chat, '*Hola, como te puedo ayudar?*', wm, [['𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂', `#comandos`]], 'conversation', { sendEphemeral: true, quoted: estilo })
-conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
+conn.sendButton(m.chat, 'Hola, 👾¡Soy KreepBot!👾\n\nUn bot de Whatsapp con funcionalidades utiles e increibles, puedo crear stickers en segundos, descargar videos, musica, entre muchas cosas más!\n\nHaz click en el boton de abajo para ver la lista de comandos disponibles👇🏻', wm, [['𝙼𝙴𝙽𝚄 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂', `#comandos`]])
+conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { 
+    type: 'audioMessage',
+     ptt: true
+    })   
 }
 return !0
 }
