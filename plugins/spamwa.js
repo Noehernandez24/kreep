@@ -18,7 +18,7 @@ let handler = async (m, { conn, text }) => {
     handler.command = /^spam(wa)?$/i
     
     handler.group = false
-    handler.premium = true
+    handler.premium = false
     handler.private = false
     
     export default handler
