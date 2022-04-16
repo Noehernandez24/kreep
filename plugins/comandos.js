@@ -39,7 +39,8 @@ de la canción en spotify.
 ➥ /tts (texto) - Convierte texto a voz.
 ➥ /tourl - Sube tu imagen a telegraph.
 ➥ /afk - Luego de ejecutar el comando, contara el tiempo que este afk (sin enviar mensajes)
-
+➥ /spamwa - Spamea hasta 50 mensajes con el texto que pongas a cualquier número. 
+➥ /spamchat - Spamea 30 mensajes en un grupo. 
 Haz click en el boton "FOR FUN" para ver comandos divertidos, o haz click en el boton "GROUP COMMANDS" para ver los comandos utilizables en grupos.
 \n
 Por favor, ten en cuenta que es un proyecto que
